@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 30%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: white;
+  width: 100%;
+  padding: 0px;
+}
+.unibas {
+  background-color: #a5d7d2;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2 >Shared Reading Study Liverpool</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>READ WITH US</h2>
+      <h5>Join us for a research study on Shared Reading from February to May 2025</h5>
+      <p>We would like to invite you to take part in an exciting 12-week study focused on understanding how participating in a Shared Reading group might affect young adults' sense of well-being. <br>
+        We are looking for individuals between the ages of 18 and 25 to join us. <br>
+        The study will run from the end of January to the beginning of April and will involve weekly sessions at <a href="https://www.thereader.org.uk/">The Reader</a>,
+        located in <a href="https://maps.google.com/maps?hl=de&gl=de&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x487b21b0109bc539:0x391889ab66321ec6">Calderstones Park</a>.
+        Each session will last approximately 2 hours, with specific time slots to be determined. <br>
+        No prior experience with Shared Reading is necessary, and you don’t need to be an avid reader to participate—everyone is welcome!<br>
+        During the study, you will take part in group reading sessions, and we will ask you to complete weekly questionnaires and
+        participate in a focus group interview at the end of the study. Please note that sessions will be audio- and video-recorded, but all data collected will be anonymized to ensure your privacy. <br>
+        As a thank you for your time and contribution, we will offer a £100 gift voucher at the end of the study. <br>
+        If you're interested and meet the age criteria, we would love to have you on board!</p>
+    </div>
+    <div class="card">
+      <h2>COME BY FOR A TASTER-SESSION</h2>
+      <p>On the XX. of December and XX. of January, we offer a taster Shared Reading session, so that you know what you're singing up for. <br>
+      Please klick the button below to register.</p>
+      <a href="https://survey-3.psychologie.unibas.ch/ffp/index.php/272617?lang=en">
+        <button class="button">Register</button>
+      </a>
+      <div class="fakeimg" style="height:200px;">
+
+      </div>
+      <p>Some text..</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Organised By:</h2>
+      <div>
+        <img class="unibas" src="img/Unias_Logo.png" alt="University of Basel Logo">
+      </div>
+    </div>
+    <div class="card">
+      <h3>Funded By:</h3>
+      <div class="fakeimg">
+        <img class="fakeimg" src="img/SNF_Logo.png" alt="Swiss National Science Foundation">
+      </div>
+    </div>
+    <div class="card">
+      <h3>Learn More About Shared Reading:</h3>
+      <div class="fakeimg">The Reader</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+
+</body>
+</html>
