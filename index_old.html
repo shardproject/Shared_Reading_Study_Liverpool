@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #777777;
+}
+
+    /* Header/Blog Title */
+    .header-image {
+      background-image: url("img/medium-shot-people-reading-together.jpg");
+      background-color: #cccccc;
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .image-source {
+      font-size: 10px;
+      text-align: right;
+      color: white;
+      position: absolute;
+      bottom: 1%;
+      right: 1%;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 70%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 30%;
+      padding-left: 20px;
+    }
+
+    /* Fake image */
+    .fakeimg {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .unibas {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: #c4c2e8;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 10px;
+      text-align: left;
+      background: #c4c2e8;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #EB8317;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      margin-left: 10%
+    }
+
+    .button:hover {
+      background-color: #F3C623
+    }
+
+    .button:active {
+      background-color: #F3C623;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 300px;
+      background-color: #EB8317;
+      color: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      position: absolute;
+      z-index: 1;
+      top: -5px;
+      left: 110%;
+    }
+
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent black transparent transparent;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+
+    .headline {
+      color: white;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header-image">
+    <div class="header">
+      <h2 style="color:white;">Shared Reading Liverpool</h2>
+    </div>
+    <div class="image-source">
+      <p>Image from <a href="www.freepik.com">Freepik</a></p>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2 class="headline">JOIN OUR SHARED READING STUDY</h2>
+        <p>We are looking for young adults (ages 18-25) to take part in a 12-week study on
+          <b class="tooltip">Shared Reading <span class="tooltiptext">Shared Reading groups come together in a relaxed
+              atmosphere to explore compelling reads. A trained reader leader reads out loud and the group then talks
+              about how the text made them feel. Everyone can share their ideas or memories. Participation is completely
+              optional—everyone is welcome to simply listen and enjoy.</span></b> and well-being.
+          No experience with Shared Reading is needed. Everyone is welcome!
+        </p>
+
+        <p>The study runs from late January to early April. It involves weekly 2-hour sessions at <a
+            href="https://www.thereader.org.uk/">The Reader</a>,
+          in <a
+            href="https://maps.google.com/maps?hl=de&gl=de&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x487b21b0109bc539:0x391889ab66321ec6">Calderstones
+            Park</a>, Liverpool.
+          You would take part in group reading sessions and complete weekly questionnaires. There will be a focus group
+          interview at the end of the study. Sessions will be audio- and video-recorded, but all data will be
+          anonymised. If you want to learn more about how your data will be collected, stored and used, click here.</p>
+        <p>As a thank you, we will give you a £100 voucher at the end of the study.
+          If you're interested in joining us and meet the age criteria, we'd love to have you on board!</p>
+        <h2 class="headline">COME BY FOR A TASTER-SESSION</h2>
+        <p>On December XX and January XX, we offer a non-binding Shared Reading taster session, so that you can find out
+          if Shared Reading is for you and decide whether or not you would like to participate in the study.</p>
+        <p>Please click the button below to register.</p>
+        <a href="https://survey-3.psychologie.unibas.ch/ffp/index.php/272617?lang=en">
+          <button class="button"><b>Register</b></button></a>
+        <br>
+        <br>
+        <h2 class="headline">LEARN MORE ABOUT THE STUDY</h2>
+        <p>If you want to learn more about participation and how your data will be collected, stored and used, <a
+            href="assets/Participant_Information.pdf">click here</a>.
+        <p>If you have questions, please contact antonia.vogler@unibas.ch</p>
+      </div>
+    </div>
+
+    <div class="rightcolumn">
+      <div class="card">
+        <h3 class="headline">Organised By:</h2>
+          <div>
+            <a href="https://www.unibas.ch/en.html">
+              <img class="fakeimg" src="img/Unibas_Logo_black.png" alt="University of Basel Logo">
+            </a>
+          </div>
+
+          <h3 class="headline">Funded By:</h3>
+          <div class="fakeimg">
+            <a href="https://www.snf.ch/en">
+              <img class="unibas" src="img/SNF_Logo.png" alt="Swiss National Science Foundation">
+            </a>
+          </div>
+
+          <h3 class="headline">Learn More About Shared Reading:</h3>
+          <div>
+            <a href="https://www.thereader.org.uk/">
+              <img class="fakeimg" src="https://www.thereader.org.uk/wp-content/themes/the-reader/images/logo.svg"
+                alt="University of Basel Logo">
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h3 class="headline">Contact</h3>
+    <a href="https://shard-project.com/en/">
+      <p>SHARD-Project</p>
+    </a>
+    <p>Digital Humanities Lab <br>University of Basel <br>Spalenberg 65 <br>4051 Basel <br>Switzerland</p>
+  </div>
+</body>
+</html>
